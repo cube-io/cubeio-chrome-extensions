@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+
+  "name": "Justfone tools",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+  "content_scripts": [ {
+      "js": [ "scripts/jquery-2.0.0.min.js", "scripts/navigate-commits.js" ],
+      "matches": [ "https://github.com/*/*/commit/*" ]
+   }, {
+      "js": [ "scripts/jquery-2.0.0.min.js", "scripts/links-to-storage.js", "scripts/navigate-commits.js" ],
+      "matches": [ "https://github.com/*/*/pull/*" ]
+   } ],
+  "permissions": [
+    "storage"
+  ]
+}
