@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
 
-  "name": "Justfone tools",
+  "name": "Justfone review tools",
   "version": "1.0",
 
   "browser_action": {
