@@ -28,7 +28,7 @@ $(document).keydown(function (event)
 
 var navigate = function (event)
 {
-	return event.ctrlKey && event.shiftKey && (event.which == 37 || event.which == 39)
+	return event.ctrlKey && event.altKey && (event.which == 37 || event.which == 39)
 }
 
 var getPreviousLink = function (index, links)
