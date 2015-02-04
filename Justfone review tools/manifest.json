@@ -2,7 +2,7 @@
   "manifest_version": 2,
 
   "name": "Justfone review tools",
-  "version": "1.1",
+  "version": "1.2",
 
   "browser_action": {
     "default_icon": "icon.png"
@@ -13,6 +13,9 @@
    }, {
       "js": [ "scripts/jquery-2.0.0.min.js", "scripts/links-to-storage.js", "scripts/navigate-commits.js" ],
       "matches": [ "https://github.com/*/*/pull/*" ]
+   }, {
+      "js": [ "scripts/jquery-2.0.0.min.js", "scripts/wide-code-window.js" ],
+      "matches": [ "https://github.com/*/*/commit/*", "https://github.com/*/*/blob/*" ]
    } ],
   "permissions": [
     "storage"
